@@ -13,6 +13,7 @@
         @livewireStyles
     </head>
     <body>
+        {{-- Esta es la forma de ejecutar los componentes --}}
         <livewire:main/>
         @livewireScripts
     </body>
