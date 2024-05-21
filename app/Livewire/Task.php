@@ -37,6 +37,8 @@ class Task extends Component
 
         // Vuelve a ejecutar la función mount para actualizar el listado y limpiar el input
         $this->mount();
+
+        session()->flash('message','Tarea guardada correctamente!');
     }
 
     // Ejecuta la vista relacionada

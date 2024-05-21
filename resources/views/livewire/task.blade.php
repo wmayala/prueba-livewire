@@ -6,7 +6,15 @@
         </div>
         <button type="submit" class="bg-indigo-700 text-white font-bold w-full rounded shadow p-2">Guardar</button>
     </form>
-
+    @if(session()->has('message'))
+        <h3>
+            <div id="alert-border-3" class="fixed top-0 right-0 z-50 flex items-center p-4 mb-4 text-green-800 border-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800" role="alert">
+                <div class="ms-3 text-sm font-medium">
+                    {{session('message')}}
+                </div>
+            </div>
+        </h3>
+    @endif
     <table class="shadow-md">
         <thead>
             <tr class="bg-gray-200 text-gray-600 uppercase text-sm">
